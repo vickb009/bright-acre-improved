@@ -72,50 +72,50 @@
   --elevate-1: rgba(0, 0, 0, 0.03);
   --elevate-2: rgba(0, 0, 0, 0.08);
 
-  /* Bright Acre: warm-trust + solar-gold accents */
-  --background: 35 33% 98%;
-  --foreground: 222 25% 12%;
+  /* Bright Acre: Infrastructure-level Stability */
+  --background: 210 20% 98%;
+  --foreground: 220 45% 10%;
 
   --card: 0 0% 100%;
-  --card-foreground: 222 25% 12%;
-  --card-border: 222 14% 90%;
+  --card-foreground: 220 45% 10%;
+  --card-border: 215 25% 90%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 222 25% 12%;
+  --popover-foreground: 220 45% 10%;
 
-  --primary: 151 45% 26%;
-  --primary-foreground: 45 40% 98%;
+  --primary: 217 85% 29%; /* #0B3C89 Infrastructure Blue */
+  --primary-foreground: 210 20% 98%;
 
-  --secondary: 35 28% 92%;
-  --secondary-foreground: 222 25% 14%;
+  --secondary: 215 20% 94%;
+  --secondary-foreground: 220 45% 10%;
 
-  --muted: 35 20% 95%;
-  --muted-foreground: 220 12% 40%;
+  --muted: 215 20% 96%;
+  --muted-foreground: 215 25% 40%;
 
-  --accent: 43 96% 56%;
-  --accent-foreground: 222 25% 12%;
+  --accent: 40 68% 55%; /* #D9A441 Solar Gold */
+  --accent-foreground: 220 45% 10%;
 
   --destructive: 0 74% 52%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 222 14% 88%;
-  --input: 222 14% 86%;
-  --ring: 151 45% 26%;
+  --border: 215 25% 88%;
+  --input: 215 25% 86%;
+  --ring: 217 85% 29%;
 
-  --chart-1: 151 45% 26%;
-  --chart-2: 43 96% 56%;
-  --chart-3: 210 55% 52%;
-  --chart-4: 28 86% 55%;
-  --chart-5: 262 68% 58%;
+  --chart-1: 217 85% 29%;
+  --chart-2: 40 68% 55%;
+  --chart-3: 15 85% 55%; /* #F28C28 Solar Orange */
+  --chart-4: 220 45% 15%;
+  --chart-5: 215 25% 45%;
 
   --sidebar: 0 0% 100%;
   --sidebar-foreground: 222 25% 12%;
   --sidebar-border: 222 14% 88%;
-  --sidebar-primary: 151 45% 26%;
-  --sidebar-primary-foreground: 45 40% 98%;
-  --sidebar-accent: 35 20% 95%;
-  --sidebar-accent-foreground: 222 25% 12%;
-  --sidebar-ring: 151 45% 26%;
+  --sidebar-primary: 217 85% 29%;
+  --sidebar-primary-foreground: 210 20% 98%;
+  --sidebar-accent: 215 20% 96%;
+  --sidebar-accent-foreground: 220 45% 10%;
+  --sidebar-ring: 217 85% 29%;
 
   --font-sans: "DM Sans", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-serif: "Source Serif 4", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -158,49 +158,49 @@
   --elevate-1: rgba(255, 255, 255, 0.04);
   --elevate-2: rgba(255, 255, 255, 0.09);
 
-  --background: 222 22% 10%;
-  --foreground: 35 25% 96%;
+  --background: 222 35% 8%;
+  --foreground: 210 20% 98%;
 
-  --card: 222 22% 12%;
-  --card-foreground: 35 25% 96%;
-  --card-border: 222 18% 20%;
+  --card: 222 35% 10%;
+  --card-foreground: 210 20% 98%;
+  --card-border: 217 30% 18%;
 
-  --popover: 222 22% 12%;
-  --popover-foreground: 35 25% 96%;
+  --popover: 222 35% 10%;
+  --popover-foreground: 210 20% 98%;
 
-  --primary: 43 96% 56%;
-  --primary-foreground: 222 25% 12%;
+  --primary: 40 68% 55%;
+  --primary-foreground: 222 45% 10%;
 
-  --secondary: 222 16% 18%;
-  --secondary-foreground: 35 25% 96%;
+  --secondary: 222 25% 14%;
+  --secondary-foreground: 210 20% 98%;
 
-  --muted: 222 16% 18%;
-  --muted-foreground: 35 12% 75%;
+  --muted: 222 25% 14%;
+  --muted-foreground: 215 20% 75%;
 
-  --accent: 151 45% 36%;
-  --accent-foreground: 35 25% 96%;
+  --accent: 15 85% 55%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 74% 52%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 222 18% 22%;
-  --input: 222 18% 24%;
-  --ring: 43 96% 56%;
+  --border: 217 30% 16%;
+  --input: 217 30% 18%;
+  --ring: 40 68% 55%;
 
-  --chart-1: 43 96% 56%;
-  --chart-2: 151 45% 36%;
-  --chart-3: 210 55% 62%;
-  --chart-4: 28 86% 62%;
-  --chart-5: 262 68% 68%;
+  --chart-1: 40 68% 55%;
+  --chart-2: 15 85% 55%;
+  --chart-3: 217 85% 29%;
+  --chart-4: 215 25% 65%;
+  --chart-5: 215 20% 85%;
 
-  --sidebar: 222 22% 12%;
-  --sidebar-foreground: 35 25% 96%;
-  --sidebar-border: 222 18% 20%;
-  --sidebar-primary: 43 96% 56%;
-  --sidebar-primary-foreground: 222 25% 12%;
-  --sidebar-accent: 222 16% 18%;
-  --sidebar-accent-foreground: 35 25% 96%;
-  --sidebar-ring: 43 96% 56%;
+  --sidebar: 222 35% 10%;
+  --sidebar-foreground: 210 20% 98%;
+  --sidebar-border: 217 30% 18%;
+  --sidebar-primary: 40 68% 55%;
+  --sidebar-primary-foreground: 222 45% 10%;
+  --sidebar-accent: 222 25% 14%;
+  --sidebar-accent-foreground: 210 20% 98%;
+  --sidebar-ring: 40 68% 55%;
 
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
