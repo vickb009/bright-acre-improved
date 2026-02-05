@@ -1,3 +1,4 @@
+import logo from "@assets/bright-acre-logo_1770141425405.png";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -15,6 +16,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Link } from "wouter";
 
 const container = {
   hidden: { opacity: 0 },
@@ -80,8 +82,8 @@ function TopNav({ onCta }: { onCta: () => void }) {
 
   const links = useMemo(
     () => [
-      { href: "#landowners", label: "Landowners" },
-      { href: "#developers", label: "Developers" },
+      { href: "/", label: "Landowners" },
+      { href: "/developers", label: "Developers" },
       { href: "#process", label: "How it works" },
       { href: "#faq", label: "FAQ" },
     ],
@@ -91,35 +93,35 @@ function TopNav({ onCta }: { onCta: () => void }) {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-        <a
-          href="#"
+        <Link
+          href="/"
           data-testid="link-home"
           className="group inline-flex items-center gap-2"
         >
-          <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] shadow-[var(--shadow-sm)]">
-            <Sun className="h-5 w-5" strokeWidth={2.2} />
-          </span>
-          <div className="leading-tight">
-            <div
-              data-testid="text-brand"
-              className="text-sm font-semibold tracking-tight"
-            >
-              Bright Acre
-            </div>
-            <div className="text-xs text-muted-foreground">Land ↔ Solar</div>
-          </div>
-        </a>
+          <img src={logo} alt="Bright Acres Logo" className="h-10 w-auto" />
+        </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
           {links.map((l) => (
-            <a
-              key={l.href}
-              data-testid={`link-nav-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-              href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {l.label}
-            </a>
+            l.href.startsWith("#") ? (
+              <a
+                key={l.label}
+                data-testid={`link-nav-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
+                href={l.href}
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.label}
+                data-testid={`link-nav-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
+                href={l.href}
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {l.label}
+              </Link>
+            )
           ))}
           <Button
             data-testid="button-nav-cta"
@@ -161,15 +163,27 @@ function TopNav({ onCta }: { onCta: () => void }) {
             <div className="mx-auto max-w-6xl px-4 py-4 md:px-6">
               <div className="grid gap-3">
                 {links.map((l) => (
-                  <a
-                    key={l.href}
-                    data-testid={`link-mobile-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                    href={l.href}
-                    className="rounded-xl border bg-card px-4 py-3 text-sm shadow-[var(--shadow-xs)]"
-                    onClick={() => setOpen(false)}
-                  >
-                    {l.label}
-                  </a>
+                   l.href.startsWith("#") ? (
+                    <a
+                      key={l.label}
+                      data-testid={`link-mobile-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
+                      href={l.href}
+                      className="rounded-xl border bg-card px-4 py-3 text-sm shadow-[var(--shadow-xs)]"
+                      onClick={() => setOpen(false)}
+                    >
+                      {l.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={l.label}
+                      data-testid={`link-mobile-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
+                      href={l.href}
+                      className="rounded-xl border bg-card px-4 py-3 text-sm shadow-[var(--shadow-xs)]"
+                      onClick={() => setOpen(false)}
+                    >
+                      {l.label}
+                    </Link>
+                  )
                 ))}
                 <Button
                   data-testid="button-mobile-cta-2"
