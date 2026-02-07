@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ui/ContactForm";
+
 import logo from "@assets/bright-acre-logo_1770141425405.png";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -76,6 +78,14 @@ function SectionHeading({
     </div>
   );
 }
+<SectionHeading
+  eyebrow="Get in Touch"
+  title="Contact Us"
+  desc="Have questions? Send us a message and we'll respond promptly."
+/>
+
+<ContactForm />
+
 
 function TopNav({ onCta }: { onCta: () => void }) {
   const [open, setOpen] = useState(false);
