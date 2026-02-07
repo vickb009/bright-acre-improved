@@ -576,6 +576,14 @@ function ValueProps() {
     </section>
   );
 }
+<div className="my-12">
+  <SectionHeading
+    eyebrow="Contact"
+    title="Get in Touch"
+    desc="Send us a message and we'll respond quickly."
+  />
+  <ContactForm />
+</div>
 
 function FAQ() {
   const faqs = [
@@ -589,12 +597,68 @@ function FAQ() {
     },
     {
       q: "What land is typically a fit?",
-      a: "Developers often look for 20–200+ contiguous acres, road access, and proximity to feasible interconnection points.",
+      a: "Developers often look for 10–200+ contiguous acres, road access, and proximity to feasible interconnection points.",
     },
     {
       q: "What does it cost to start?",
       a: "Nothing. Bright Acre helps you understand fit and connect with aligned developers—no upfront costs.",
     },
+      {
+        q: "What is the overall process for leasing my land to a solar developer?",
+        a: "Every solar project follows a few key steps: legal checks on your land, site studies including technical and environmental evaluations, construction, and then operations where your land generates long-term income. We handle all the heavy lifting for you."
+      },
+      {
+        q: "How long does it take to build a solar farm?",
+        a: "Construction time depends on the farm size and site preparation. Small farms may take a month, while very large sites could take up to 18 months. Planning and development may add extra months before construction starts."
+      },
+      {
+        q: "What happens after my lease expires?",
+        a: "Solar panels last up to 35 years, though leases are typically 20–25 years. After expiration, the solar farm can be removed at the operator’s expense, or the lease may be renewed with potential upgrades to the system."
+      },
+      {
+        q: "What if I currently lease part of my land for farming or ranching?",
+        a: "You’ll need to coordinate with current tenants to wind down activities. Most developers allow several months’ notice before any changes are required."
+      },
+      {
+        q: "Can my home be powered by the solar farm?",
+        a: "No, solar farms connect to the high-voltage grid and cannot directly power individual homes."
+      },
+      {
+        q: "Is leasing my land the same as renting it?",
+        a: "Not exactly. Rentals are short-term, but solar leases are long-term contracts designed for electricity production, usually 20+ years."
+      }
+      {
+        q: "What if there are buildings or structures on my land?",
+        a: "Developers often work around existing structures you want to keep. Unused small structures can be removed at the developer’s expense."
+      },
+      {
+        q: "Will the solar farm have a fence?",
+        a: "Yes, fencing ensures safety and liability protection. You can discuss placement or appearance concerns with the developer."
+      },
+      {
+        q: "Will my land be permanently affected?",
+        a: "No. Solar farms don’t use harmful chemicals or emissions. Construction impacts are temporary and mostly from equipment and vehicles."
+      },
+      {
+        q: "Are there health risks to my family or community?",
+        a: "Absolutely not. Solar farms are safe and silent, producing no harmful emissions or noise."
+      }
+      {
+        q: "What if the solar developer cannot complete the project?",
+        a: "This is rare. Developers usually post a bond or financial guarantee to cover costs if the project cannot be completed, ensuring your property is restored."
+      }
+      {
+        q: "How do I submit information for multiple properties?",
+        a: "Use a separate form for each property. Additional forms can be submitted anytime through our website."
+      },
+      {
+        q: "Can I update information after submitting a form?",
+        a: "Previously submitted forms cannot be edited. Submit a new form with updated information and note that it is an update."
+      },
+      {
+        q: "How do I remove my records from the database?",
+        a: "Use our contact form to request removal, and your property information will no longer be promoted to developers."
+      },
   ];
 
   return (
@@ -889,4 +953,4 @@ export default function Home() {
       <Contact open={contactOpen} onClose={() => setContactOpen(false)} />
     </div>
   );
-}
+} 
